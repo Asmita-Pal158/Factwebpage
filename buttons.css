@@ -1,0 +1,113 @@
+/*buttons*/
+
+.vote button {
+  padding: 5px 12px;
+  background-color: #78716c;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 100px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+.vote {
+  margin-left: auto;
+  display: flex;
+  flex-shrink: 0;
+}
+.vote button:hover {
+  background-color: #504947;
+  transform: scale(1.1); /* Make the select element larger */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the select element on hover */
+
+.btn-l {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0px;
+  background-image: linear-gradient(135deg, #3b82f6, #eab308, #16a34a, #db2777);
+  color: white;
+  border: none;
+  font-family: "Coiny", system-ui, sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-l:hover {
+  transform: scale(1.1); /* Make the select element larger */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+}
+.allbtn {
+  background-image: linear-gradient(135deg, #3b82f6, #eab308, #16a34a, #db2777);
+  border: none;
+  font-family: "Coiny", system-ui, sans-serif;
+  font-size: 20px;
+  border-radius: 18px;
+  margin: 0px;
+  color: white;
+  margin: 5px;
+  padding: 5px 15px;
+  border: none;
+  transition: 0.3s;
+  line-height: 1;
+  width: 200px;
+  cursor: pointer;
+}
+
+.share {
+  font-family: "Coiny", system-ui, sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  background-image: linear-gradient(135deg, #3b82f6, #eab308, #16a34a, #db2777);
+  border: none;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.share:hover {
+  transform: scale(1.1); /* Make the select element larger */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+}
+.category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.cat {
+  font-family: "Coiny", system-ui, sans-serif;
+  font-size: 20px;
+  border-radius: 18px;
+  margin: 0px;
+  color: white;
+  margin: 5px;
+  padding: 5px 15px;
+  border: none;
+  transition: 0.3s;
+  line-height: 1;
+  width: 200px;
+  cursor: pointer;
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .cat,
+  .allbtn {
+    width: 450px;
+  }
+}
+@media (max-width: 600px) {
+  .cat,
+  .allbtn {
+    width: 250px;
+  }
+}
+
+.allbtn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+.cat:hover {
+  transform: scale(110%) rotate(-2deg);
+}

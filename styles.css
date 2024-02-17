@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+
+  box-sizing: border-box;
+}
+/*main*/
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  padding: 10px;
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+body {
+  background-color: #1c1917;
+  font-family: "Sono", monospace, sans-serif;
+  color: #d6d3d1;
+  padding: 48px 64px;
+}
+@media (max-width: 1000px) {
+  .body {
+    padding: 32px 48px;
+  }
+}
+.header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fact {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Sono", monospace, sans-serif;
+  background-color: #292524;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  letter-spacing: -1px;
+  border-radius: 16px;
+}
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*link styling*/
+.source:link {
+  color: #78716c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.source:visited {
+  color: rgba(247, 152, 230, 0.952);
+}
+.source:hover {
+  color: rgb(163, 242, 124);
+}
+.source:active {
+  color: rgb(139, 197, 242);
+}
+
+/*elements*/
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  size: 42px;
+  text-transform: uppercase;
+  font-family: "Coiny", system-ui, sans-serif;
+  text-align: center;
+  align-self: center;
+  margin-top: 5px;
+  line-height: 1;
+}
+ul {
+  list-style: none; /* This removes the bullets (for ul) or numbers (for ol) */
+}
+
+.tag {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Coiny", system-ui, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 100px;
+}
+
+div {
+  padding: 0px;
+}

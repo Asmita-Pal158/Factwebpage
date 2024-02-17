@@ -1,0 +1,52 @@
+/*form*/
+.fact-form {
+  background-color: #292524;
+  padding: 10px 30px;
+  padding: 10px;
+  margin: 10px;
+  color: #cfcbc9;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+.fact-form input,
+.fact-form select {
+  background-color: #78716c;
+  width: 220px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 16px;
+  color: #cfcbc9;
+  transition: all 0.3s ease;
+  font-family: "Sono", monospace, sans-serif;
+}
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+.fact-form input ::placeholder {
+  color: #78b8d4;
+}
+.fact-form span {
+  margin-left: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media (max-width: 1000px) {
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
+input:hover,
+select:hover {
+  transform: scale(1.1); /* Make the select element larger */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+}
