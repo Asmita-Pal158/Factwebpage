@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="form.css" />
     <link rel="stylesheet" href="buttons.css" />
-
+    <link rel="shortcut icon" href="#" />
 
 
   </head>
@@ -26,13 +26,13 @@
 
           <h1>Today I Learned</h1>
         </div>
-        <button class="share" ,class="btn-l">Share a fact</button>
+        <button class="share" ,class="btn btn-l btn-open">SHARE A FACT</button>
       </header>
 
-      <form class="fact-form">
+      <form class="fact-form hidden">
         <input type="text" placeholder="Share a text with the world" />
         <span>200</span>
-        <input type="text" / placeholder="trustworthy source...">
+        <input type="text"  placeholder="trustworthy source...">
         <select name="Choose category";>
           <option disabled selected hidden>Choose Category</option>
           <option value="All">All</option>
@@ -45,26 +45,26 @@
           <option value="History">History</option>
           <option value="News">News</option>
         </select>
-        <button class="btn-l">Post</button>
+        <button class=" btn btn-l">Post</button>
       </form>
 
       <main class="main">
         <aside>
           <ul class="category">
-            <li><button  class="allbtn" >All</button></li>
-            <li><button class="cat" style="background-color: #3b82f6;">Technology</button></li>
-            <li><button class="cat" style="background-color: #16a34a;">Science</button></li>
-            <li><button class="cat" style="background-color: #ef4444;">Finance</button></li>
-            <li><button class="cat" style="background-color: #eab308;">Society</button></li>
-            <li><button class="cat" style="background-color: #db2777;">Entertainment</button></li>
-            <li><button class="cat" style="background-color: #14b8a6;">Health</button></li>
-            <li><button class="cat" style="background-color: #f97316;">History</button></li>
-            <li><button class="cat" style="background-color: #8b5cf6";">News</button></li>
+            <li><button  class=" allbtn" >All</button></li>
+            <li><button class= "cat" style="background-color: #3b82f6;">Technology</button></li>
+            <li><button class=" cat" style="background-color: #16a34a;">Science</button></li>
+            <li><button class=" cat" style="background-color: #ef4444;">Finance</button></li>
+            <li><button class=" cat" style="background-color: #eab308;">Society</button></li>
+            <li><button class=" cat" style="background-color: #db2777;">Entertainment</button></li>
+            <li><button class=" cat" style="background-color: #14b8a6;">Health</button></li>
+            <li><button class=" cat" style="background-color: #f97316;">History</button></li>
+            <li><button class=" cat" style="background-color: #8b5cf6";">News</button></li>
           </ul>
         </aside>
 
         <section>
-          <ul>
+          <ul class="facts-list">
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
@@ -79,9 +79,9 @@
                 >#technology#</span
               >
               <div class="vote">
-                <button >👍 24</button>
+                <button  >👍 24</button>
                 <button >🤯 9</button>
-                <button>⛔ 4</button>
+                <button >⛔ 4</button>
               </div>
             </li>
             <li class="fact">
@@ -100,7 +100,7 @@
                 >#society#</span
               >
               <div class="vote">
-                <button>👍 11</button>
+                <button >👍 11</button>
                 <button >🤯 2</button>
                 <button >⛔ 0</button>
               </div>
@@ -109,5 +109,7 @@
         </section>
       </main>
     </div>
+    
   </body>
+  <script  src="script.js"></script>
 </html>
