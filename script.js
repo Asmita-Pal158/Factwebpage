@@ -93,7 +93,6 @@ function createFactsList(dataArray) {
 }
 
 btn.addEventListener("click", function () {
-  factsList.innerHTML = "";
   if (form.classList.contains("hidden")) {
     form.classList.remove("hidden");
     btn.textContent = "Close";
